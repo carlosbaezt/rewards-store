@@ -2,9 +2,9 @@ import React from "react";
 
 const Points = ({ points, onClickHandler }) => {
 	return (
-		<span onClick={onClickHandler}>
+		<span onClick={onClickHandler} data-test="points-container">
 			<i className="far fa-money-bill-alt"></i>
-			<span style={{ paddingLeft: "10px" }}>
+			<span style={{ paddingLeft: "10px" }} data-test="points-amount">
 				${new Intl.NumberFormat().format(points)}
 			</span>
 		</span>
